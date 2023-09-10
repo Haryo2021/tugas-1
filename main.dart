@@ -6,7 +6,8 @@ class Mahasiswa {
   Mahasiswa(this.nim, this.nama, this.tahunLahir);
 
   void perkenalan() {
-    print("Perkenalkan, nama saya $nama, dengan NIM $nim, dan usia saya $tahunLahir tahun");
+    int usia=DateTime.now().year-tahunLahir;
+    print("Perkenalkan, nama saya $nama, dengan NIM $nim, dan usia saya $usia tahun");
   }
 }
 
